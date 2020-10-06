@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>94358709975-0m34g6pia2ug9ju8m3vaaottqnn7krjq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.94358709975-0m34g6pia2ug9ju8m3vaaottqnn7krjq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAoV-HAguHeWiunoZxAbJkBvF2I_fpjXII</string>
+	<key>GCM_SENDER_ID</key>
+	<string>94358709975</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.clementcauser.familink</string>
+	<key>PROJECT_ID</key>
+	<string>familink-095021</string>
+	<key>STORAGE_BUCKET</key>
+	<string>familink-095021.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:94358709975:ios:ed1e556a35ee99339c3292</string>
+	<key>DATABASE_URL</key>
+	<string>https://familink-095021.firebaseio.com</string>
+</dict>
+</plist>

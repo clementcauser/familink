@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "94358709975",
+    "firebase_url": "https://familink-095021.firebaseio.com",
+    "project_id": "familink-095021",
+    "storage_bucket": "familink-095021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94358709975:android:7347493ba3d63da19c3292",
+        "android_client_info": {
+          "package_name": "com.clementcauser.familink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94358709975-mooct0nv5l4vu1bn0lfaiqk2s2fom9lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg61Atkg6rSHkcsVu-EqiEEiqV_U6nwrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94358709975-mooct0nv5l4vu1bn0lfaiqk2s2fom9lv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "94358709975-0m34g6pia2ug9ju8m3vaaottqnn7krjq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clementcauser.familink"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
