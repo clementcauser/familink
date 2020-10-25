@@ -17,17 +17,14 @@ import { Task } from "../types";
 import DetailledTaskItem from "./DetailledTaskItem";
 import TaskItem from "./TaskItem";
 
-const ActionContainer = styled.View<{ color?: "success" | "info" }>`
-  background-color: ${({ theme, color }) =>
-    color ? theme.palette[color].dark : "transparent"};
+const ActionContainer = styled.View<{ color?: COLORS_WITH_VARIANTS_KEYS }>`
+  background-color: ${({ color }) =>
+    MAP_PALETTE_VARIANTS[color || "grey-dark"]};
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
   border-radius: 20px;
   margin: 0 10px;
-`;
-
-const ColoredActionContainer = styled(ActionContainer)`
-  background-color: ${({ theme }) => theme.palette.white.dark};
 `;
 
 const TaskContainer = styled.View`
@@ -42,24 +39,18 @@ const BlurBackdrop = styled(BlurView)`
   margin-bottom: 30px;
 `;
 
-const CheckIcon = styled(AntDesign)<{ status?: COLORS_WITH_VARIANTS_KEYS }>`
-  color: ${({ status }) => MAP_PALETTE_VARIANTS[status || "success-dark"]};
-`;
+type ActionButton = { status?: COLORS_WITH_VARIANTS_KEYS };
 
-const EditIcon = styled(AntDesign)`
-  color: ${({ theme }) => theme.palette.info.dark};
-`;
-
-const RightAction = ({ status }: { status?: COLORS_WITH_VARIANTS_KEYS }) => (
-  <ActionContainer>
-    <CheckIcon name="checkcircleo" size={24} status={status} />
+const RightAction = ({ status }: ActionButton) => (
+  <ActionContainer color={status}>
+    <AntDesign name="check" size={24} color="white" />
   </ActionContainer>
 );
 
-const LeftAction = () => (
-  <ColoredActionContainer>
-    <EditIcon name="edit" size={24} />
-  </ColoredActionContainer>
+const LeftAction = ({ status }: ActionButton) => (
+  <ActionContainer color={status}>
+    <AntDesign name="edit" size={24} color="white" />
+  </ActionContainer>
 );
 
 const TasksList = () => {
@@ -94,10 +85,8 @@ const TasksList = () => {
               <Swipeable
                 onSwipeableLeftOpen={console.log}
                 onSwipeableRightOpen={() => onMarkAsDone(item.id)}
-                renderRightActions={() => (
-                  <RightAction status={item.category?.color} />
-                )}
-                renderLeftActions={LeftAction}
+                renderRightActions={() => <RightAction status="success-dark" />}
+                renderLeftActions={() => <LeftAction status="info-dark" />}
               >
                 <TaskItem task={item} onSelect={setSelectedTask} />
               </Swipeable>
